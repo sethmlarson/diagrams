@@ -1,10 +1,12 @@
-# UTF-8 Diagrams
+# Diagrams
 
-A collection of SVG diagrams created in [diagrams.net](https://app.diagrams.net) for an article about UTF-8.
+Repository of diagrams made for [articles on my blog](https://sethmlarson.dev/blog). All diagrams are created using [diagrams.net](https://diagrams.net).
 
-- [Octets](https://raw.githubusercontent.com/sethmlarson/utf-8-diagrams/main/octets.svg)
-- [Encoding](https://raw.githubusercontent.com/sethmlarson/utf-8-diagrams/main/encoding.svg)
-- [ASCII compatibility](https://raw.githubusercontent.com/sethmlarson/utf-8-diagrams/main/ascii-compatibility.svg)
-- [All octet layouts](https://raw.githubusercontent.com/sethmlarson/utf-8-diagrams/main/all-octets.svg)
+- [UTF-8](https://github.com/sethmlarson/diagrams/tree/main/diagrams/utf-8)
+
+## Licenses
 
 Copyright 2022 Seth Michael Larson All rights reserved.
+
+All diagrams under the `diagrams/` directory are licensed under CC BY 4.0.
+All code under the `tools/` directory is licensed under Apache-2.0.
