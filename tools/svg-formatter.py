@@ -23,13 +23,20 @@ def main():
 
     len_before = len(data)
     data = (
-        data.replace("font-family: Courier New", "font-family: monospace")
-        .replace('font-family="Courier New"', 'font-family="monospace"')
+        data
+        # Use the system's monospace font
+        .replace("font-family: Courier New", "font-family: monospace").replace(
+            'font-family="Courier New"', 'font-family="monospace"'
+        )
+        # Don't replace the cursor with a pointer, makes it hard to highlight text
         .replace("cursor:pointer;", "")
     )
+
+    # Remove embedded draw.io content
     data = re.sub(r" content=\"&lt;mxfile[^\"]+?\"", "", data)
     data = re.sub(r" onclick=\"[^\"]+?\"", "", data)
 
+    # Replace runs of 6 characters in colors with runs of 3.
     for hexchar in "0123456abcdefABCDEF":
         data = data.replace(f"#{hexchar * 6}", f"#{hexchar * 3}")
 
