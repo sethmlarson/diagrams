@@ -1,0 +1,10 @@
+flowchart LR
+  N0(boto3) ==> N1(botocore)
+  N0(boto3) .- N2(jmespath)
+  N0(boto3) ==> N3(s3transfer)
+  N1(botocore) .- N2(jmespath)
+  N1(botocore) .- N4(python-dateutil)
+  N1(botocore) ==> N5(urllib3)
+  N4(python-dateutil) .- N6(six)
+  N3(s3transfer) ==> N1(botocore)
+
