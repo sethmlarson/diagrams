@@ -2,7 +2,6 @@
 
 Repository of diagrams made for [articles on my blog](https://sethmlarson.dev/blog). All diagrams are created using [diagrams.net](https://diagrams.net) and [mermaid.live](https://mermaid.live).
 
-- [Shoulders your Python projects stand on](https://github.com/sethmlarson/diagrams/tree/main/diagrams/shoulders-your-python-projects-stand-on)
 - [Security for package maintainers](https://github.com/sethmlarson/diagrams/tree/main/diagrams/security-for-package-maintainers)
 - [UTF-8](https://github.com/sethmlarson/diagrams/tree/main/diagrams/utf-8)
 
