@@ -25,9 +25,9 @@ def main():
     data = (
         data
         # Use the system's monospace font
-        .replace("font-family: Courier New", "font-family: monospace").replace(
-            'font-family="Courier New"', 'font-family="monospace"'
-        )
+        .replace("font-family: Courier New", "font-family: monospace")
+        .replace('font-family="Courier New"', 'font-family="monospace"')
+        .replace("Courier New", "monospace")
         # Don't replace the cursor with a pointer, makes it hard to highlight text
         .replace("cursor:pointer;", "")
     )
