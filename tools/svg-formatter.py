@@ -25,6 +25,7 @@ def main():
     data = (
         data
         # Use the system's monospace font
+        .replace("&quot;Courier New&quot;", "monospace")
         .replace("font-family: Courier New", "font-family: monospace")
         .replace('font-family="Courier New"', 'font-family="monospace"')
         .replace("Courier New", "monospace")
